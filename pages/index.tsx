@@ -11,9 +11,11 @@ export async function getStaticProps() {
   }
 }
 
-function cn(...classes) {
-  return classes.filter(Boolean).join(' ')
+
+function cn(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
 }
+
 
 export default function Gallery({ images }) {
   return (
