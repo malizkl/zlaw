@@ -43,7 +43,7 @@ export default function Gallery({ images }: { images: any[] }) {
   )
 }
 
-function BlurImage({ image }) {
+function BlurImage({ image }: { image: ImageType }) {
   const [isLoading, setLoading] = useState(true)
 
   return (
